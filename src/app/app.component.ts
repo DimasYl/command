@@ -1,16 +1,20 @@
-import {Component, OnInit} from '@angular/core';
+import {Component} from '@angular/core';
+import {FormControl, FormGroup} from "@angular/forms";
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit{
+export class AppComponent {
 
-  public value: Date
+  public form: FormGroup = new FormGroup({
+    date: new FormControl('')
+  })
 
-  ngOnInit(): void {
-  this.value = new Date()
+  public edit: boolean = true
+
+  viewForm() {
+    this.edit = !this.edit
   }
-
 }

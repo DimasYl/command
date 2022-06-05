@@ -8,7 +8,8 @@ import { AppComponent } from './app.component';
 import {ButtonModule} from "primeng/button";
 import {RippleModule} from "primeng/ripple";
 import {CalendarModule} from 'primeng/calendar';
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {InputTextModule} from "primeng/inputtext";
 
 @NgModule({
   declarations: [
@@ -21,7 +22,9 @@ import {FormsModule} from "@angular/forms";
     RippleModule,
     BrowserAnimationsModule,
     CalendarModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    InputTextModule
   ],
   providers: [],
   bootstrap: [AppComponent]
