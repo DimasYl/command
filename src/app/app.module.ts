@@ -10,10 +10,12 @@ import {RippleModule} from "primeng/ripple";
 import {CalendarModule} from 'primeng/calendar';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {InputTextModule} from "primeng/inputtext";
+import { CalendarComponent } from './calendar/calendar.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CalendarComponent
   ],
   imports: [
     BrowserModule,

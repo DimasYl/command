@@ -1,0 +1,18 @@
+<div class="root" [formGroup]="form">
+  <div *ngIf="edit">
+    <p-calendar
+      [showIcon]="true"
+      formControlName="date"
+    ></p-calendar>
+  </div>
+  <div *ngIf="!edit">
+    <input pInputText value="{{form.get('date').value | date: 'MMM d, y'}}" [disabled]="true" />
+  </div>
+
+  <button pButton label="view date" class="p-button-outlined" (click)="viewForm()"></button>
+
+<div class="state">
+  {{state.calendar$ | async}}
+</div>
+
+</div>
