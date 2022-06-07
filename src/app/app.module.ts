@@ -11,11 +11,13 @@ import {CalendarModule} from 'primeng/calendar';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {InputTextModule} from "primeng/inputtext";
 import { CalendarComponent } from './calendar/calendar.component';
+import { TodolistComponent } from './todolist/todolist.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CalendarComponent
+    CalendarComponent,
+    TodolistComponent
   ],
   imports: [
     BrowserModule,
